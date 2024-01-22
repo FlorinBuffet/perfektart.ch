@@ -69,22 +69,22 @@
 					Wir würden uns sehr freuen, von Ihnen zu hören. Sie können uns frei kontaktieren, indem Sie die unten angegebene Telefonnummer wählen oder alternativ Ihre Frage stellen, indem Sie das Formular unten ausfüllen.
 				</p>
 				<br>
-					<form>
-						<div class="row">
+					<form action="send_email.php" method="post">
+						<div class="row ">
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Name und Vorname">
+								<input class="form-control" type="text" name="name" placeholder="Name und Vorname">
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Email">
+								<input class="form-control" type="text" name="email" placeholder="E-Mail">
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Telefonnummer">
+								<input class="form-control" type="text" name="phone" placeholder="Telefonnummer">
 							</div>
 						</div>
 						<br>
 						<div class="row">
 							<div class="col-sm-12">
-								<textarea placeholder="Geben Sie hier Ihre Nachricht ein..." class="form-control" rows="9"></textarea>
+								<textarea class="form-control" rows="9" name="message" placeholder="Geben Sie hier Ihre Nachricht ein..." ></textarea>
 							</div>
 						</div>
 						<br>
@@ -121,7 +121,7 @@
 	
 	<section class="container-full top-space">
 		<div>
-			<iframe id="map" style="filter: invert(90%)" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.6593675474714!2d9.047273232999926!3d47.445945045204226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aea2cacc68f6f%3A0x132a16c88401e2ad!2sOberdorfstrasse%2013%2C%209532%20Rickenbach!5e0!3m2!1smk!2sch!4v1686472803508!5m2!1smk!2sch&language=de" width="600" height="450" style="border:0;" allowfullscreen="Yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe id="map" style="filter: invert(90%)" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.6593675474714!2d9.047273232999926!3d47.445945045204226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aea2cacc68f6f%3A0x132a16c88401e2ad!2sOberdorfstrasse%2013%2C%209532%20Rickenbach!5e0!3m2!1smk!2sch!4v1686472803508!5m2!1smk!2sch&language=es" width="600" height="450" style="border:0;" allowfullscreen="Yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</section>
 
@@ -152,8 +152,7 @@
 						<h3 class="widget-title">Folgen Sie Uns</h3>
 						<div class="widget-body">
 							<p class="follow-me-icons">
-								<a href=""><i class="fa fa-instagram fa-2"></i></a>
-								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+								<a href="https://www.instagram.com/perfektart__/"><i class="fa fa-instagram fa-2"></i></a>
 							</p>
 						</div>
 					</div>
@@ -213,7 +212,8 @@
 	<!-- Google Maps -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script> 
 	<script src="assets/js/google-map.js"></script>
-	
 
+	<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=l04i0srs&n=n1.ratufa.io"></script>
+	
 </body>
 </html>
